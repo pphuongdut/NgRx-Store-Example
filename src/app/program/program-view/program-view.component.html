@@ -1,0 +1,8 @@
+
+<h4>List of programs</h4>
+
+<div *ngFor="let programs of programs$ | async; let i=index">
+
+  <span  >{{i+1}}.</span> {{programs.name}}
+  <button (click)="deleteProgram(i)"> Delete </button>
+</div>
